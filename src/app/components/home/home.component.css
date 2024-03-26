@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.row{
+    flex-direction: row;
+}
+.title{
+    text-align: center;
+    margin: 0;
+}
+.nav{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+}
+.nav-btn{
+    flex: 1;
+}
