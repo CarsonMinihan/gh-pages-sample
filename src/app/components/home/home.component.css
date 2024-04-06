@@ -1,22 +1,98 @@
-.header{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
 .row{
     flex-direction: row;
 }
+.column{
+    flex-direction: column;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
+    height: 50px;
+    width: 100%;
+}
+
 .title{
+    display: flex;
     text-align: center;
-    margin: 0;
+    margin: auto 0;
+    margin-left: 10px;
 }
 .nav{
     display: flex;
     text-align: center;
-    margin: auto;
-    width: 400px;
+    min-width: 400px;
+}
+.nav-btn-container{
+    flex: 1;
+    align-content: center;
 }
 .nav-btn{
+    padding: 0 10px;
+    
+    margin: auto;
+    text-decoration: none; 
+    color: black;
+    font-size:medium;
+    font-weight: 600;
+}
+.nav-btn:hover{
+    color: gray;
+}
+
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    justify-content: space-around;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.self-img{
+    max-height: 400px;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: auto;
     flex: 1;
+}
+.top-text-container{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex: 1; 
+}
+.top-text-header{
+    flex: 1;
+    margin: auto;
+}
+.top-text-body{
+    flex: 6;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .header{
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .title{
+        margin: auto;
+    }
+    .nav{
+        margin: 10px auto;
+    }
+    .top{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+    }
 }
