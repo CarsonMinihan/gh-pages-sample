@@ -14,7 +14,7 @@
     height: 50px;
     width: 100%;
     top: 0;
-    background-color: rgb(165, 182, 182);
+    /* background-color: rgb(165, 182, 182); */
 }
 
 .title{
@@ -51,12 +51,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     letter-spacing: 0.5px;
     justify-content: space-around;
     max-width: 800px;
-    margin: 40px auto;
+    margin: 20px auto 40px auto;
     border-radius: 10px;
-    background-color: rgb(204, 224, 224);
+    background: rgb(32,213,231);
+    background: linear-gradient(0deg, rgb(170, 202, 205) 0%, rgb(203, 203, 203) 50%, rgb(170, 202, 205) 100%);
     padding: 10px;
 }
 
@@ -82,6 +84,12 @@
     font-style: italic;
     text-align: center;
     flex: 1; 
+    margin-top: 0;
+}
+.middle-title-header{
+    font-style: italic;
+    text-align: center;
+    flex: 1; 
 }
 .top-text-body{
     text-align: left;
@@ -93,9 +101,9 @@
 }
 
 .middle{
-    margin-top: 20px;
     background-color: rgb(165, 182, 182);
     width: 100%;
+    min-height: 450px;
 }
 .middle-container{
     min-width: 700px;
@@ -104,12 +112,16 @@
     display: flex;
 }
 .tech-list{
+    max-width: 500px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     text-align: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 .tech-list>*{
-    flex: 1;
+    flex: 1 1 33.3%;
 }
 
 
@@ -132,6 +144,9 @@
     .title{
         margin: auto;
         padding-top: 5px;
+    }
+    .title-header{
+        margin-top: 15px;
     }
     .nav{
         margin: 10px auto;
