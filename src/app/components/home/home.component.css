@@ -34,6 +34,7 @@
 }
 .nav-btn{
     padding: 0 10px;
+    transition: all 0.2s ease-in-out;
     
     margin: auto;
     text-decoration: none; 
@@ -42,6 +43,7 @@
     font-weight: 600;
 }
 .nav-btn:hover{
+    transition: all 0.2s ease-in-out;
     color: rgb(64, 64, 64);
     font-size: large;
 }
@@ -57,8 +59,9 @@
     max-width: 800px;
     margin: 20px auto 40px auto;
     border-radius: 10px;
-    background: rgb(32,213,231);
-    background: linear-gradient(0deg, rgb(170, 202, 205) 0%, rgb(203, 203, 203) 50%, rgb(170, 202, 205) 100%);
+    background: rgb(210, 219, 219);
+    /* background: linear-gradient(20deg, rgb(203, 203, 203) 0%, rgb(170, 202, 205) 50%, rgb(203, 203, 203) 100%); */
+    box-shadow: 0px 0px 5px 2px rgb(106, 106, 106);
     padding: 10px;
 }
 
@@ -152,11 +155,13 @@
         margin: 10px auto;
     }
     .top{
+        background-color: rgb(169, 187, 187);
         flex-direction: column-reverse;
         justify-content: center;
         align-content: center;
         margin: 0;
         border-radius: 0;
+        box-shadow: none;
     }
     .top-text-body{
         padding-right: 0px;
