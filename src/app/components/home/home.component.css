@@ -127,6 +127,27 @@
     flex: 1 1 33.3%;
 }
 
+.experience{
+    padding-top: 20px;
+}
+.experience-list{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    max-width: 500px;
+    text-align: center;
+}
+.experience-list-item{
+    flex: 1;
+    background-color: rgb(146, 146, 146);
+    border-radius: 5px 5px 0 0;
+}
+.video-player{
+    width: 490px;
+    height: 400px;
+}
+
 
 
 
