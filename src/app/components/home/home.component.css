@@ -148,6 +148,17 @@
     height: 400px;
 }
 
+.contact-container{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact-title-header{
+    font-style: italic;
+    text-align: center;
+    flex: 1; 
+}
+
 
 
 
@@ -200,4 +211,20 @@
     .tech-list>*{
         flex: 1 1 33.3%;
     }
+}
+@media only screen and (max-width: 500px) {
+    .nav{
+        min-width: 360px
+    }
+    .top-text-body{
+        padding: 0 10px 0 10px
+    }
+    .middle-container{
+        min-width: 360px;
+    }
+    .video-player{
+        width: 360px;
+        height: 300px;
+    }
+
 }
