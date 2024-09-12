@@ -59,9 +59,9 @@
     max-width: 800px;
     margin: 20px auto 40px auto;
     border-radius: 10px;
-    background: rgb(210, 219, 219);
+    background-color: rgb(156, 173, 173);
     /* background: linear-gradient(20deg, rgb(203, 203, 203) 0%, rgb(170, 202, 205) 50%, rgb(203, 203, 203) 100%); */
-    box-shadow: 0px 0px 5px 2px rgb(106, 106, 106);
+    /* box-shadow: 0px 0px 5px 2px rgb(106, 106, 106); */
     padding: 10px;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .middle{
-    background-color: rgb(165, 182, 182);
+    background-color: rgb(156, 173, 173);
     width: 100%;
     min-height: 450px;
 }
@@ -132,20 +132,26 @@
 }
 .experience-list{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: auto;
     justify-content: center;
-    max-width: 500px;
+    /* max-width: 500px; */
     text-align: center;
 }
 .experience-list-item{
     flex: 1;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(156, 173, 173);
     border-radius: 5px;
+    max-width: 500px;
+    margin:auto;
+    margin: 10px auto;
 }
-.video-player{
+.experience-example{
     width: 490px;
     height: 400px;
+    object-fit: cover;
+    border: 1px solid rgb(144, 144, 144);
 }
 
 .contact-container{
