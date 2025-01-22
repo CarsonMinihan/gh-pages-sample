@@ -143,12 +143,15 @@
     flex: 1;
     background-color: rgb(156, 173, 173);
     border-radius: 5px;
+
     max-width: 500px;
+    /* max-width: 99%; */
     margin:auto;
     margin: 10px auto;
 }
 .experience-example{
     width: 490px;
+    
     height: 400px;
     object-fit: cover;
     border: 1px solid rgb(144, 144, 144);
@@ -217,20 +220,34 @@
     .tech-list>*{
         flex: 1 1 33.3%;
     }
+    .experience-list{
+        flex-direction: column;
+    }
+    
 }
 @media only screen and (max-width: 500px) {
     .nav{
-        min-width: 360px
+        min-width: 320px
+    }
+    .self-img{
+        max-width: 100%;
+        height: auto;
     }
     .top-text-body{
         padding: 0 10px 0 10px
     }
     .middle-container{
-        min-width: 360px;
+        min-width: 320px;
     }
     .video-player{
         width: 360px;
         height: 300px;
     }
-
+    .experience-list-item{
+        width: 100%;
+    }
+    .experience-example{
+        width: 99%;
+        height: auto;
+    }
 }
